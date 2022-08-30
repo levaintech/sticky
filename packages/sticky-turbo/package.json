@@ -1,6 +1,25 @@
 {
   "name": "@birthdayresearch/sticky-turbo",
   "version": "0.0.0",
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc -b ./tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "@birthdayresearch"
+    ]
+  },
   "dependencies": {
     "turbo": "1.4.3"
   }

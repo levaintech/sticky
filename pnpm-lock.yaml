@@ -73,7 +73,12 @@ importers:
       turbo: 1.4.3
 
   packages/sticky-turbo-jest:
-    specifiers: {}
+    specifiers:
+      '@birthdayresearch/sticky-jest': workspace:*
+      '@birthdayresearch/sticky-turbo': workspace:*
+    dependencies:
+      '@birthdayresearch/sticky-jest': link:../sticky-jest
+      '@birthdayresearch/sticky-turbo': link:../sticky-turbo
 
   packages/sticky-typescript:
     specifiers:
