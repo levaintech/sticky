@@ -1,3 +1,6 @@
 [build]
 publish = "packages/sticky-docs/.contented/.preview/out/"
-command = "turbo run generate --filter=sticky-docs --force"
+command = "npx pnpm install && turbo run generate --filter=sticky-docs --force"
+
+[build.environment]
+NPM_FLAGS = "--prefix=/dev/null"
