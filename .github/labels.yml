@@ -53,17 +53,17 @@
 - color: fbca04
   name: area/workflow
 - color: fbca04
-  name: sticky-jest
+  name: area/sticky-jest
 - color: fbca04
-  name: sticky-prettier
+  name: area/sticky-prettier
 - color: fbca04
-  name: sticky-turbo
+  name: area/sticky-turbo
 - color: fbca04
-  name: sticky-turbo-jest
+  name: area/sticky-turbo-jest
 - color: fbca04
-  name: sticky-typescript
+  name: area/sticky-typescript
 - color: fbca04
-  name: eslint-config
+  name: area/eslint-config
 
 # Priority
 - color: d93f0b
