@@ -1,0 +1,3 @@
+[build]
+publish = "packages/sticky-docs/.contented/.preview/out/"
+command = "turbo run generate --filter=sticky-docs --force"
