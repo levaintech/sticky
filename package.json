@@ -1,0 +1,29 @@
+{
+  "name": "@birthdayresearch/sticky",
+  "version": "0.0.0",
+  "private": true,
+  "files": [],
+  "scripts": {
+    "prepare": "husky install",
+    "write": "turbo run write",
+    "clean": "turbo run clean",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint -- --fix",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@birthdayresearch/eslint-config": "workspace:*",
+    "@birthdayresearch/sticky-prettier": "workspace:*",
+    "@birthdayresearch/sticky-turbo": "workspace:*",
+    "@birthdayresearch/sticky-typescript": "workspace:*"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
+  "prettier": "@birthdayresearch/sticky-prettier",
+  "engines": {
+    "node": "^18.0.0 || ^16.16.0",
+    "pnpm": ">=7.9.0"
+  }
+}

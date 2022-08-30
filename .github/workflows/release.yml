@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  Version:
+    runs-on: ubuntu-latest
+    outputs:
+      result: ${{ steps.version.outputs.result }}
+    steps:
+      - id: version
+        uses: actions/github-script@d50f485531ba88479582bc2da03ff424389af5c1
+        with:
+          script: |
+            const semver = context.ref.replace('refs/tags/v', '')
+            if (semver.match(/^[0-9]+\.[0-9]+\.[0-9]+$/)) {
+                return semver
+            }
+            throw new Error('not semver')
+          result-encoding: string
+
+  NPM:
+    runs-on: ubuntu-latest
+    needs: Version
+    environment: NPM Release
+    steps:
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/setup-node@2fddd8803e2f5c9604345a0b591c3020ee971a93
+        with:
+          node-version: '16'
+
+      - run: npm ci
+
+      - run: lerna version ${{ needs.Version.outputs.result }} --yes --no-push --no-git-tag-version --exact
+
+      - run: npm run build
+
+      - name: Publish
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=$NPM_AUTH_TOKEN
+          npm publish --workspaces --access public
+        env:
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

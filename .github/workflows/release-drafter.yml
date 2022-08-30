@@ -1,0 +1,21 @@
+name: Release Drafter
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: release-drafter/release-drafter@06a49bf28488e030d35ca2ac6dbf7f408a481779
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
