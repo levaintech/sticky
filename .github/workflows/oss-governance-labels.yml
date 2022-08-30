@@ -3,20 +3,19 @@ name: OSS Governance
 on:
   push:
     branches: [main]
-    paths: [.github/labels.yml]
+    paths: [.github/labels.yml, .github/workflows/oss-governance-labels.yml]
 
 permissions:
   contents: read
   issues: write
 
 jobs:
-  Labels:
+  main:
+    name: Governance Labels
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
 
-      - uses: micnncim/action-label-syncer@3abd5ab72fda571e69fffd97bd4e0033dd5f495c
-        with:
-          prune: true
+      - uses: micnncim/action-label-syncer@3abd5ab72fda571e69fffd97bd4e0033dd5f495c # tag=v1.3.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

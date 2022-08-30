@@ -12,10 +12,11 @@ permissions:
   checks: write
 
 jobs:
-  Labeler:
+  main:
+    name: Governance Labeler
     runs-on: ubuntu-latest
     steps:
-      - uses: fuxingloh/multi-labeler@fb9bc28b2d65e406ffd208384c5095793c3fd59a
+      - uses: fuxingloh/multi-labeler@fb9bc28b2d65e406ffd208384c5095793c3fd59a # tag=v1.8.0
         with:
           github-token: ${{ secrets.BIRTHDAYRESEARCH_BOT_GITHUB_TOKEN }}
           config-path: .github/labeler.yml
