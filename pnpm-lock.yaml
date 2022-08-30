@@ -46,7 +46,10 @@ importers:
     specifiers: {}
 
   packages/sticky-typescript:
-    specifiers: {}
+    specifiers:
+      typescript: 4.7.4
+    dependencies:
+      typescript: 4.7.4
 
 packages:
 
@@ -1750,7 +1753,6 @@ packages:
     resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /unified/10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
