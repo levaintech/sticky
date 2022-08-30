@@ -1,4 +1,35 @@
 {
   "name": "@birthdayresearch/sticky-jest",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "jest-preset.js"
+  ],
+  "scripts": {
+    "build": "tsc -b ./tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint src",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "@birthdayresearch"
+    ]
+  },
+  "jest": {
+    "preset": "./jest-preset.js"
+  },
+  "dependencies": {
+    "@types/jest": "^28.1.8",
+    "jest": "28.1.3",
+    "jest-extended": "3.0.2",
+    "ts-jest": "28.0.8",
+    "wait-for-expect": "^3.0.2"
+  }
 }
