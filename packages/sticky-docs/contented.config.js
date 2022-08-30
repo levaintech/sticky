@@ -25,7 +25,7 @@ const config = {
             file.fields.title = 'Sticky';
           } else {
             file.path = file.path.replaceAll(/\/readme$/g, '');
-            file.sections = file.sections.slice(0, 1).map((v) => v.toUpperCase());
+            file.sections = ['Packages'];
           }
           return file;
         },
