@@ -3,4 +3,4 @@ NPM_FLAGS="--version" # prevent Netlify npm install
 
 [build]
 publish = "packages/sticky-docs/.contented/.preview/out/"
-command = "npx pnpm i --store=node_modules/.pnpm-store --frozen-lockfile && turbo run generate --filter=sticky-docs --force"
+command = "npx pnpm install --frozen-lockfile && turbo run generate --filter=sticky-docs --force"
