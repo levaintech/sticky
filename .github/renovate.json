@@ -4,7 +4,7 @@
   "dependencyDashboard": true,
   "dependencyDashboardAutoclose": false,
   "major": {
-    "dependencyDashboardApproval": true
+    "dependencyDashboardApproval": false
   },
   "rangeStrategy": "bump",
   "packageRules": [
