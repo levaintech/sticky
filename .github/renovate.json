@@ -13,7 +13,7 @@
       "groupName": "eslint"
     },
     {
-      "matchPackagePatterns": ["jest"],
+      "matchPackagePatterns": ["jest", "wait-for-expect"],
       "groupName": "jest"
     },
     {
