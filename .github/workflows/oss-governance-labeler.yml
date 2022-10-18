@@ -16,6 +16,6 @@ jobs:
     name: Governance Labeler
     runs-on: ubuntu-latest
     steps:
-      - uses: fuxingloh/multi-labeler@fb9bc28b2d65e406ffd208384c5095793c3fd59a # tag=v1.8.0
+      - uses: fuxingloh/multi-labeler@12623606c1cb561e9fff26c8f275563a3a39ba8f # tag=v2.0.0
         with:
           config-path: .github/labeler.yml
