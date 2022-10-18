@@ -24,7 +24,7 @@ importers:
       eslint-config-prettier: ^8.5.0
       eslint-plugin-check-file: ^1.2.3
       eslint-plugin-import: ^2.26.0
-      eslint-plugin-simple-import-sort: ^7.0.0
+      eslint-plugin-simple-import-sort: ^8.0.0
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.40.1_5jnkxinnag2jpittelojhreu6y
       '@typescript-eslint/parser': 5.40.1_l76llshcx5hpzqzl7lfng4kpb4
@@ -34,7 +34,7 @@ importers:
       eslint-config-prettier: 8.5.0_eslint@8.25.0
       eslint-plugin-check-file: 1.2.3_eslint@8.25.0
       eslint-plugin-import: 2.26.0_vcunoyu347gmi72pwsm7mdvjca
-      eslint-plugin-simple-import-sort: 7.0.0_eslint@8.25.0
+      eslint-plugin-simple-import-sort: 8.0.0_eslint@8.25.0
 
   packages/sticky-docs:
     specifiers:
@@ -1901,8 +1901,8 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-simple-import-sort/7.0.0_eslint@8.25.0:
-    resolution: {integrity: sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==}
+  /eslint-plugin-simple-import-sort/8.0.0_eslint@8.25.0:
+    resolution: {integrity: sha512-bXgJQ+lqhtQBCuWY/FUWdB27j4+lqcvXv5rUARkzbeWLwea+S5eBZEQrhnO+WgX3ZoJHVj0cn943iyXwByHHQw==}
     peerDependencies:
       eslint: '>=5.0.0'
     dependencies:
