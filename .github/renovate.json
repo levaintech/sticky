@@ -9,6 +9,11 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "matchPackagePatterns": ["node", "@types/node", "npm", "pnpm", "yarn"],
+      "groupName": "engines",
+      "enabled": false
+    },
+    {
       "matchPackagePatterns": ["eslint"],
       "groupName": "eslint"
     },
