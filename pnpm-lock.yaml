@@ -61,12 +61,12 @@ importers:
       husky: ^8.0.2
       lint-staged: ^13.0.4
       prettier: ^2.8.0
-      prettier-plugin-tailwindcss: ^0.1.13
+      prettier-plugin-tailwindcss: ^0.2.0
     dependencies:
       husky: 8.0.2
       lint-staged: 13.0.4
       prettier: 2.8.0
-      prettier-plugin-tailwindcss: 0.1.13_prettier@2.8.0
+      prettier-plugin-tailwindcss: 0.2.0_prettier@2.8.0
 
   packages/sticky-turbo:
     specifiers:
@@ -4115,8 +4115,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier-plugin-tailwindcss/0.1.13_prettier@2.8.0:
-    resolution: {integrity: sha512-/EKQURUrxLu66CMUg4+1LwGdxnz8of7IDvrSLqEtDqhLH61SAlNNUSr90UTvZaemujgl3OH/VHg+fyGltrNixw==}
+  /prettier-plugin-tailwindcss/0.2.0_prettier@2.8.0:
+    resolution: {integrity: sha512-Ruqig/mdWCSpqdq9WK44nrmqM4BFWTzBPhPGwC5NK3coV9eZntEQPB84MGZbjAg0XQU02jVRHXNRPREBzxvM+A==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       prettier: '>=2.2.0'
