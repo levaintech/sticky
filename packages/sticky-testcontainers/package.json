@@ -30,7 +30,6 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@aws-sdk/client-kms": "^3.220.0",
     "@birthdayresearch/sticky-turbo-jest": "workspace:*",
     "@birthdayresearch/sticky-typescript": "workspace:*",
     "@types/uuid": "^8.3.4",

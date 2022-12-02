@@ -1,5 +1,3 @@
-import { CreateKeyCommand, KMSClient } from '@aws-sdk/client-kms';
-
 import { LocalstackContainer } from './LocalstackContainer';
 
 describe('Localstack Ports', () => {
@@ -27,23 +25,4 @@ describe('Localstack Custom Env Variables - Region', () => {
 
     expect((await startedLocalstack.exec(['printenv', 'DEFAULT_REGION'])).output.trimEnd()).toEqual('us-west-1');
   });
-});
-
-it('should connect with KMSClient', async () => {
-  const localstack = new LocalstackContainer();
-  const startedLocalstack = await localstack.start();
-
-  const client = new KMSClient({
-    region: 'us-west-2',
-    endpoint: startedLocalstack.getEndpoint(),
-    credentials: {
-      accessKeyId: 'AnythingIsOkay',
-      secretAccessKey: 'NoRulesSoAnythingIsFineAsLongNotEmpty',
-    },
-  });
-
-  const command = new CreateKeyCommand({ Description: 'Testing Key' });
-  const response = await client.send(command);
-  expect(response).toBeDefined();
-  expect(response.KeyMetadata?.Description).toStrictEqual('Testing Key');
 });
