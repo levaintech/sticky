@@ -30,7 +30,12 @@ async function run(rootDir, script, filter) {
     cwd: rootDir,
   });
 
-  if (spawn.stderr && spawn.stderr.length > 0) {
-    throw new Error(spawn.stderr.toString('utf-8'));
+  // Throw error if non-zero exit code encountered
+  if (spawn.status !== 0) {
+    const failureMessage =
+      spawn.stderr && spawn.stderr.length > 0
+        ? spawn.stderr.toString('utf-8')
+        : `Encountered non-zero exit code while running script: ${script}`;
+    throw new Error(failureMessage);
   }
 }
