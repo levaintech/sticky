@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "files": [],
+  "workspaces": [
+    "./packages/*"
+  ],
   "scripts": {
     "prepare": "husky install",
     "write": "turbo run write",
