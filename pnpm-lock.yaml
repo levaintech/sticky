@@ -75,10 +75,10 @@ importers:
       '@types/node-fetch': 2.6.2
       '@types/uuid': ^9.0.0
       node-fetch: 2.6.7
-      testcontainers: ^9.1.0
+      testcontainers: ^9.1.1
       uuid: ^9.0.0
     dependencies:
-      testcontainers: 9.1.0
+      testcontainers: 9.1.1
       uuid: 9.0.0
     devDependencies:
       '@birthdayresearch/sticky-turbo-jest': link:../sticky-turbo-jest
@@ -4223,7 +4223,6 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
-    dev: true
 
   /node-gyp-build/4.5.0:
     resolution: {integrity: sha512-2iGbaQBV+ITgCz76ZEjmhUKAKVf7xfY1sRl4UiKQspfZMH2h06SyhNsnSVy50cwkFQDGLyif6m/6uFXHkOZ6rg==}
@@ -5084,8 +5083,8 @@ packages:
       minimatch: 3.1.2
     dev: false
 
-  /testcontainers/9.1.0:
-    resolution: {integrity: sha512-YzVC6XFA/fZeCPg1Nk+11sCp3ZTKquyAIoKmGXH571IOs60Eeb/ven1XfGhGQMeGeuEJFa9i1lqZ5nduJJglgw==}
+  /testcontainers/9.1.1:
+    resolution: {integrity: sha512-4vTjKQWZxpMA+pNFlpupZ3XCdcbisYwbZIVUYFaNxl9bk8Vi/ELDzZJ3Kr14WdG7Q7333BGaZjKgKtx/ouEuMg==}
     engines: {node: '>= 10.16'}
     dependencies:
       '@balena/dockerignore': 1.0.2
@@ -5097,10 +5096,12 @@ packages:
       docker-compose: 0.23.17
       dockerode: 3.3.4
       get-port: 5.1.1
+      node-fetch: 2.6.7
       properties-reader: 2.2.0
       ssh-remote-port-forward: 1.0.4
       tar-fs: 2.1.1
     transitivePeerDependencies:
+      - encoding
       - supports-color
     dev: false
 
@@ -5136,7 +5137,6 @@ packages:
 
   /tr46/0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
-    dev: true
 
   /trim-lines/3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
@@ -5484,14 +5484,12 @@ packages:
 
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
-    dev: true
 
   /whatwg-url/5.0.0:
     resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
-    dev: true
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}
