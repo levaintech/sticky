@@ -38,9 +38,9 @@ importers:
 
   packages/sticky-docs:
     specifiers:
-      '@birthdayresearch/contented': 1.8.2
+      '@birthdayresearch/contented': 1.8.3
     devDependencies:
-      '@birthdayresearch/contented': 1.8.2_typanion@3.9.0
+      '@birthdayresearch/contented': 1.8.3_typanion@3.9.0
 
   packages/sticky-jest:
     specifiers:
@@ -447,12 +447,12 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: false
 
-  /@birthdayresearch/contented-pipeline-jest-md/1.8.2:
-    resolution: {integrity: sha512-M0ZE+rW4+ey5puIGTVOKimonOZ9SzjNa+5mQlKed6jdF2eQPTSikyerkiCqXwujVJqsUy0wKyaOU2KfPVbWmyg==}
+  /@birthdayresearch/contented-pipeline-jest-md/1.8.3:
+    resolution: {integrity: sha512-kb3xZBzqYVKECyJ1MMA+i5bWe38+qf0Kxu4S5jBmT7nDtl36yeIRp5ocyMU1gFAIbn5vzym3dGctvmru3MxX8Q==}
     dependencies:
       '@babel/parser': 7.20.5
       '@babel/types': 7.20.5
-      '@birthdayresearch/contented-pipeline-md': 1.8.2
+      '@birthdayresearch/contented-pipeline-md': 1.8.3
       strip-indent: 4.0.0
       unified: 10.1.2
       vfile: 5.3.6
@@ -460,16 +460,17 @@ packages:
       - supports-color
     dev: true
 
-  /@birthdayresearch/contented-pipeline-md/1.8.2:
-    resolution: {integrity: sha512-zbKXzNY5Fq0sDDKAO768IX23vr49FbkyfeixhFVd+UZ4gJw2RxkWjDExsQLUCVZobQVAZIb1SDJLQi7kEJQOjQ==}
+  /@birthdayresearch/contented-pipeline-md/1.8.3:
+    resolution: {integrity: sha512-UFdiPH/N8Ht9G2SfV7atUHeaPHNUkvbID60PeO39J9+N2mftkOnMS8ItzyBzFJR4MRzRH5T0jMbxZ32OIupXGA==}
     dependencies:
-      '@birthdayresearch/contented-pipeline': 1.8.2
+      '@birthdayresearch/contented-pipeline': 1.8.3
       '@jsdevtools/rehype-toc': 3.0.2
+      '@leafac/html': 3.0.2
       '@leafac/rehype-shiki': 2.2.1_shiki@0.11.1
       '@sindresorhus/slugify': 2.1.1
       hast-util-to-string: 2.0.0
       js-yaml: 4.1.0
-      minimatch: 5.1.0
+      minimatch: 5.1.1
       rehype-autolink-headings: 6.1.1
       rehype-external-links: 2.0.1
       rehype-parse: 8.0.4
@@ -490,29 +491,29 @@ packages:
       - supports-color
     dev: true
 
-  /@birthdayresearch/contented-pipeline/1.8.2:
-    resolution: {integrity: sha512-hkLDWCoMdRFCch2sQqegxeskLqg+sTyG1L8mZ/y4MAMPEqgn6ApZhw9hPd52H9gplnOJOc1XhDcFnoWY0YjE9g==}
+  /@birthdayresearch/contented-pipeline/1.8.3:
+    resolution: {integrity: sha512-cJ/CDQirCZxcmSBBlUkPnuUUbDaDLe3jgwYC4lasoa+oFyrwwDkW49esd2CKqfnIA8h0cZsAPeUZK4NXVnqjtg==}
     dependencies:
       '@sindresorhus/slugify': 2.1.1
     dev: true
 
-  /@birthdayresearch/contented-processor/1.8.2:
-    resolution: {integrity: sha512-le35PigXRT017KjUFpiHDq/pfxmDS/dzXAc5UFk6JZSfEq0fLm83hConG5xTWHxxGrQ7rh2rej+wyoo0NMiNfw==}
+  /@birthdayresearch/contented-processor/1.8.3:
+    resolution: {integrity: sha512-DTg7RTmYK8O+mETvkNbr6cS6khrQC8FdtU/ieTUf01C+/cVnJqObUMz42YnFgFs79Xf/lrknKQHRZNsw26YoyA==}
     dependencies:
       '@babel/generator': 7.20.5
-      '@birthdayresearch/contented-pipeline': 1.8.2
-      '@birthdayresearch/contented-pipeline-jest-md': 1.8.2
-      '@birthdayresearch/contented-pipeline-md': 1.8.2
-      minimatch: 5.1.0
+      '@birthdayresearch/contented-pipeline': 1.8.3
+      '@birthdayresearch/contented-pipeline-jest-md': 1.8.3
+      '@birthdayresearch/contented-pipeline-md': 1.8.3
+      minimatch: 5.1.1
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@birthdayresearch/contented/1.8.2_typanion@3.9.0:
-    resolution: {integrity: sha512-xcaQmuLmBMx/tSCarc5kK3eFaX/ykApH1syOZgucerivyQM5W2h17p6Z6d6we0Zdh/gQv6NiY+6zrc+Ua/xjCA==}
+  /@birthdayresearch/contented/1.8.3_typanion@3.9.0:
+    resolution: {integrity: sha512-GnbSOcitBb2vysMB9FBJwNGpYC5VwNB2nt5soXPnXhj/Hphdqx5uBMnEY7QmiecQODReAt0NSt7Ku419M9x5NA==}
     hasBin: true
     dependencies:
-      '@birthdayresearch/contented-processor': 1.8.2
+      '@birthdayresearch/contented-processor': 1.8.3
       '@parcel/watcher': 2.0.7
       clipanion: 3.2.0-rc.14_typanion@3.9.0
       debounce: 1.2.1
@@ -4169,6 +4170,13 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
+    dev: true
+
+  /minimatch/5.1.1:
+    resolution: {integrity: sha512-362NP+zlprccbEt/SkxKfRMHnNY85V74mVnpUpNyr3F35covl09Kec7/sEFLt3RA4oXmewtoaanoIf67SE5Y5g==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
 
   /minimist/1.2.6:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
@@ -4551,7 +4559,7 @@ packages:
   /readdir-glob/1.1.2:
     resolution: {integrity: sha512-6RLVvwJtVwEDfPdn6X6Ille4/lxGl0ATOY4FN/B9nxQcgOazvvI0nodiD19ScKq0PvA/29VpaOQML36o5IzZWA==}
     dependencies:
-      minimatch: 5.1.0
+      minimatch: 5.1.1
     dev: false
 
   /regexp.prototype.flags/1.4.3:
