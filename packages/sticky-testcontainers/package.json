@@ -26,7 +26,7 @@
     "preset": "@birthdayresearch/sticky-turbo-jest"
   },
   "dependencies": {
-    "testcontainers": "^9.1.0",
+    "testcontainers": "^9.1.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
