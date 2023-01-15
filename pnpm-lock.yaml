@@ -47,13 +47,13 @@ importers:
       '@types/jest': ^29.2.5
       jest: 29.3.1
       jest-extended: 3.2.3
-      ts-jest: 29.0.4
+      ts-jest: 29.0.5
       wait-for-expect: ^3.0.2
     dependencies:
       '@types/jest': 29.2.5
       jest: 29.3.1
       jest-extended: 3.2.3_jest@29.3.1
-      ts-jest: 29.0.4_du2kawmxigaaxxrnk3wf7uqgfq
+      ts-jest: 29.0.5_du2kawmxigaaxxrnk3wf7uqgfq
       wait-for-expect: 3.0.2
 
   packages/sticky-prettier:
@@ -5231,8 +5231,8 @@ packages:
     resolution: {integrity: sha512-AqTiAOLcj85xS7vQ8QkAV41hPDIJ71XJB4RCUrzo/1GM2CQwhkJGaf9Hgr7BOugMRpgGUrqRg/DrBDl4H40+8g==}
     dev: true
 
-  /ts-jest/29.0.4_du2kawmxigaaxxrnk3wf7uqgfq:
-    resolution: {integrity: sha512-YdNofkoyzeinwjIqLSYQeAM+GTmFQ7xFNtWcR5OyitY5VLzzNINrNmfhP5H3daA/V+RGQR7O3g1K6ysRgu5xIQ==}
+  /ts-jest/29.0.5_du2kawmxigaaxxrnk3wf7uqgfq:
+    resolution: {integrity: sha512-PL3UciSgIpQ7f6XjVOmbi96vmDHUqAyqDr8YxzopDqX3kfgYtX1cuNeBjP+L9sFXi6nzsGGA6R3fP3DDDJyrxA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
