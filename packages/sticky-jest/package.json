@@ -30,6 +30,7 @@
     "jest": "29.4.1",
     "jest-extended": "3.2.3",
     "ts-jest": "29.0.5",
-    "wait-for-expect": "^3.0.2"
+    "wait-for-expect": "^3.0.2",
+    "whatwg-fetch": "^3.6.2"
   }
 }
