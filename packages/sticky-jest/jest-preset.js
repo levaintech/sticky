@@ -8,6 +8,6 @@ module.exports = {
   },
   preset: 'ts-jest',
   reporters: ['default', 'github-actions'],
-  setupFilesAfterEnv: ['jest-extended/all', './jestSetup.js'],
+  setupFilesAfterEnv: ['jest-extended/all'],
   testTimeout: 120000,
 };
