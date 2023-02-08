@@ -77,10 +77,10 @@ importers:
       '@types/node-fetch': 2.6.2
       '@types/uuid': ^9.0.0
       node-fetch: 2.6.7
-      testcontainers: ^9.1.1
+      testcontainers: ^9.1.2
       uuid: ^9.0.0
     dependencies:
-      testcontainers: 9.1.1
+      testcontainers: 9.1.2
       uuid: 9.0.0
     devDependencies:
       '@birthdayresearch/sticky-turbo-jest': link:../sticky-turbo-jest
@@ -5311,8 +5311,8 @@ packages:
       minimatch: 3.1.2
     dev: false
 
-  /testcontainers/9.1.1:
-    resolution: {integrity: sha512-4vTjKQWZxpMA+pNFlpupZ3XCdcbisYwbZIVUYFaNxl9bk8Vi/ELDzZJ3Kr14WdG7Q7333BGaZjKgKtx/ouEuMg==}
+  /testcontainers/9.1.2:
+    resolution: {integrity: sha512-a4VbUUntbrnTsxD20u8TBhFRpdHufGbBQ3ZlPHsROK7JXh9mLDsx7qk272bt+jBm6yUf0SBBhBynC+B6uxb9Mg==}
     engines: {node: '>= 10.16'}
     dependencies:
       '@balena/dockerignore': 1.0.2
