@@ -75,7 +75,7 @@ importers:
       '@birthdayresearch/sticky-turbo-jest': workspace:*
       '@birthdayresearch/sticky-typescript': workspace:*
       '@types/node-fetch': 2.6.2
-      '@types/uuid': ^9.0.0
+      '@types/uuid': ^9.0.1
       node-fetch: 2.6.7
       testcontainers: ^9.1.3
       uuid: ^9.0.0
@@ -86,7 +86,7 @@ importers:
       '@birthdayresearch/sticky-turbo-jest': link:../sticky-turbo-jest
       '@birthdayresearch/sticky-typescript': link:../sticky-typescript
       '@types/node-fetch': 2.6.2
-      '@types/uuid': 9.0.0
+      '@types/uuid': 9.0.1
       node-fetch: 2.6.7
 
   packages/sticky-turbo:
@@ -1100,8 +1100,8 @@ packages:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
 
-  /@types/uuid/9.0.0:
-    resolution: {integrity: sha512-kr90f+ERiQtKWMz5rP32ltJ/BtULDI5RVO0uavn1HQUOwjx0R1h0rnDYNL0CepF1zL5bSY6FISAfd9tOdDhU5Q==}
+  /@types/uuid/9.0.1:
+    resolution: {integrity: sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==}
     dev: true
 
   /@types/yargs-parser/21.0.0:
