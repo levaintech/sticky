@@ -8,7 +8,7 @@
   "dependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "prettier": "^2.8.4",
+    "prettier": "^2.8.5",
     "prettier-plugin-tailwindcss": "^0.2.4"
   }
 }

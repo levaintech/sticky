@@ -62,13 +62,13 @@ importers:
     specifiers:
       husky: ^8.0.3
       lint-staged: ^13.1.2
-      prettier: ^2.8.4
+      prettier: ^2.8.5
       prettier-plugin-tailwindcss: ^0.2.4
     dependencies:
       husky: 8.0.3
       lint-staged: 13.1.2
-      prettier: 2.8.4
-      prettier-plugin-tailwindcss: 0.2.4_prettier@2.8.4
+      prettier: 2.8.5
+      prettier-plugin-tailwindcss: 0.2.4_prettier@2.8.5
 
   packages/sticky-testcontainers:
     specifiers:
@@ -4648,7 +4648,7 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier-plugin-tailwindcss/0.2.4_prettier@2.8.4:
+  /prettier-plugin-tailwindcss/0.2.4_prettier@2.8.5:
     resolution: {integrity: sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
@@ -4700,11 +4700,11 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 2.8.4
+      prettier: 2.8.5
     dev: false
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+  /prettier/2.8.5:
+    resolution: {integrity: sha512-3gzuxrHbKUePRBB4ZeU08VNkUcqEHaUaouNt0m7LGP4Hti/NuB07C7PPTM/LkWqXoJYJn2McEo5+kxPNrtQkLQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: false
