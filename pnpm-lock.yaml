@@ -119,6 +119,10 @@ importers:
       turbo:
         specifier: 1.9.8
         version: 1.9.8
+    devDependencies:
+      '@birthdayresearch/sticky-jest':
+        specifier: workspace:*
+        version: link:../sticky-jest
 
   packages/sticky-turbo-jest:
     dependencies:
