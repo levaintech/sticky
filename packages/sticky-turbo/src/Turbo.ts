@@ -1,6 +1,6 @@
 import { spawnSync, SpawnSyncReturns, StdioOptions } from 'node:child_process';
 import { existsSync, readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, sep } from 'node:path';
 
 import { PackageJson } from './PackageJson';
 
@@ -184,10 +184,10 @@ export class Turbo {
  * @param depth {number} on how far up to search
  */
 export function findRootTurboJsonPath(cwd: string, depth: number = 4): string | undefined {
-  const paths = cwd.split('/');
+  const paths = cwd.split(sep);
 
   for (let i = 0; i < depth; i += 1) {
-    const path = `${paths.join('/')}/turbo.json`;
+    const path = `${paths.join(sep)}/turbo.json`;
     if (existsSync(path)) {
       const object = JSON.parse(readFileSync(path, { encoding: 'utf-8' }));
       if (!object.extends?.includes('//')) {
