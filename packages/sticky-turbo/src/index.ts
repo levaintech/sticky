@@ -1,2 +1,2 @@
 export * from './PackageJson';
-export * from './TurboJson';
+export * from './Turbo';

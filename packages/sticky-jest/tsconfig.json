@@ -1,8 +1,6 @@
 {
-  "extends": "@birthdayresearch/sticky-typescript/tsconfig.json",
+  "extends": "@birthdayresearch/sticky-typescript",
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./dist"
-  },
-  "include": ["src"]
+    "rootDir": "./"
+  }
 }
