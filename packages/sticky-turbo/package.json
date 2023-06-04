@@ -25,7 +25,7 @@
     "preset": "@birthdayresearch/sticky-jest"
   },
   "dependencies": {
-    "turbo": "1.9.8"
+    "turbo": "1.10.1"
   },
   "devDependencies": {
     "@birthdayresearch/sticky-jest": "workspace:*"
