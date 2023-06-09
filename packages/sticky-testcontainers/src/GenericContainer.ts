@@ -1,11 +1,12 @@
+import { randomUUID } from 'node:crypto';
+
 import { GenericContainer as AbstractGenericContainer } from 'testcontainers';
 import { AbstractStartedContainer } from 'testcontainers/dist/modules/abstract-started-container';
-import { v4 as uuidv4 } from 'uuid';
 
 export type { StartedTestContainer } from 'testcontainers';
 
 export class GenericContainer extends AbstractGenericContainer {
-  protected override name: string = `artemys-generic-container-${uuidv4()}`;
+  protected override name: string = `artemys-generic-container-${randomUUID()}`;
 
   public override withName(name: string): this {
     this.name = name;
@@ -14,7 +15,7 @@ export class GenericContainer extends AbstractGenericContainer {
 
   constructor(image: string) {
     super(image);
-    this.withName(`${image.replaceAll(/[^a-zA-Z0-9.-]/g, '-')}-${uuidv4()}`);
+    this.withName(`${image.replaceAll(/[^a-zA-Z0-9.-]/g, '-')}-${randomUUID()}`);
   }
 }
 
