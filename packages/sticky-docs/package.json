@@ -12,6 +12,6 @@
     "write": "contented write"
   },
   "devDependencies": {
-    "@birthdayresearch/contented": "1.9.3"
+    "@birthdayresearch/contented": "2.0.0"
   }
 }
