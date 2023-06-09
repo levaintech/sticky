@@ -4,24 +4,24 @@
   "private": true,
   "files": [],
   "scripts": {
-    "prepare": "husky install",
-    "write": "turbo run write",
-    "clean": "turbo run clean",
     "build": "turbo run build",
-    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "format": "prettier --write .",
     "lint": "turbo run lint -- --fix",
-    "format": "prettier --write ."
+    "prepare": "husky install",
+    "test": "turbo run test",
+    "write": "turbo run write"
   },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
+  "prettier": "@birthdayresearch/sticky-prettier",
   "devDependencies": {
     "@birthdayresearch/eslint-config": "workspace:*",
     "@birthdayresearch/sticky-prettier": "workspace:*",
     "@birthdayresearch/sticky-turbo": "workspace:*",
     "@birthdayresearch/sticky-typescript": "workspace:*"
   },
-  "lint-staged": {
-    "*": "prettier --write --ignore-unknown"
-  },
-  "prettier": "@birthdayresearch/sticky-prettier",
   "packageManager": "pnpm@8.6.1",
   "engines": {
     "node": "^18.0.0",

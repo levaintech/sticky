@@ -13,6 +13,15 @@
     "lint": "eslint .",
     "test": "jest"
   },
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "eslintConfig": {
     "parserOptions": {
       "project": "./tsconfig.json"

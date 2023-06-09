@@ -1,15 +1,15 @@
 {
   "name": "@birthdayresearch/sticky-docs",
   "version": "0.0.0",
+  "type": "module",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "type": "module",
-  "main": "dist/index.js",
   "scripts": {
-    "write": "contented write",
+    "build": "contented build",
     "generate": "contented generate",
-    "build": "contented build"
+    "write": "contented write"
   },
   "devDependencies": {
     "@birthdayresearch/contented": "1.9.3"
