@@ -1,6 +1,9 @@
 {
   "name": "@birthdayresearch/sticky-docs",
   "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/BirthdayResearch/sticky"
+  },
   "type": "module",
   "main": "dist/index.js",
   "files": [

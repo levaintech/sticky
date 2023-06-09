@@ -1,6 +1,9 @@
 {
   "name": "@birthdayresearch/eslint-config",
   "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/BirthdayResearch/sticky"
+  },
   "main": "index.js",
   "files": [
     "index.js"
