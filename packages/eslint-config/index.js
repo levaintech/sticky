@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['simple-import-sort', 'check-file'],
+  plugins: ['simple-import-sort', 'check-file', 'unused-imports'],
   extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
   ignorePatterns: ['dist'],
   rules: {
@@ -35,6 +35,10 @@ module.exports = {
 
     // @typescript-eslint
     '@typescript-eslint/no-use-before-define': 'off',
+
+    '@typescript-eslint/no-unused-vars': 'off',
+    'unused-imports/no-unused-imports': 'error',
+    'unused-imports/no-unused-vars': 'error',
   },
   env: {
     node: true,
@@ -43,7 +47,12 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.unit.ts', '**/*.i9n.ts', '**/*.e2e.ts'],
-      rules: {},
+      rules: {
+        'no-lone-blocks': 'off',
+
+        'unused-imports/no-unused-imports': 'error',
+        'unused-imports/no-unused-vars': 'off',
+      },
     },
     {
       files: ['src/**/{index,cli,main}.ts'],
