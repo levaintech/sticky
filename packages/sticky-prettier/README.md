@@ -1,6 +1,4 @@
----
-title: Prettier
----
+# Prettier
 
 `@birthdayresearch/sticky-prettier`
 

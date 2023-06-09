@@ -1,6 +1,4 @@
----
-title: Turbo Jest
----
+# Turbo Jest
 
 `@birthdayresearch/sticky-turbo-jest`
 
