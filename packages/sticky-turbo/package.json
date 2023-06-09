@@ -1,6 +1,9 @@
 {
   "name": "@birthdayresearch/sticky-turbo",
   "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/BirthdayResearch/sticky"
+  },
   "main": "./dist/index.js",
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",

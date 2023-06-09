@@ -1,6 +1,9 @@
 {
   "name": "@birthdayresearch/sticky-turbo-jest",
   "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/BirthdayResearch/sticky"
+  },
   "files": [
     "jest-preset.js",
     "jest-turbo.js"
