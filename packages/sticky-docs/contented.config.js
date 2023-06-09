@@ -14,15 +14,9 @@ const config = {
         type: 'Sticky',
         pattern: '**/*.md',
         processor: 'md',
-        fields: {
-          title: {
-            type: 'string',
-          },
-        },
         transform: (file) => {
           if (file.path === '/readme') {
             file.path = '/';
-            file.fields.title = 'Sticky';
           } else {
             file.path = file.path.replaceAll(/\/readme$/g, '');
             file.sections = ['Packages'];

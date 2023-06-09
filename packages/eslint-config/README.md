@@ -1,6 +1,4 @@
----
-title: Eslint Config
----
+# Eslint Config
 
 `@birthdayresearch/eslint-config`
 

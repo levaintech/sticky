@@ -1,7 +1,4 @@
----
-title: Test Containers
-sections: ['Testcontainers']
----
+# Test Containers
 
 `@birthdayresearch/sticky-testcontainers`
 

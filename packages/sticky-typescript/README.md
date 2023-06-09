@@ -1,6 +1,4 @@
----
-title: Typescript
----
+# Typescript
 
 `@birthdayresearch/sticky-typescript`
 

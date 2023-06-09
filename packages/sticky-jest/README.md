@@ -1,6 +1,4 @@
----
-title: Jest
----
+# Jest
 
 `@birthdayresearch/sticky-jest`
 
