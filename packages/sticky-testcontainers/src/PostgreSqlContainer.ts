@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { randomUUID } from 'node:crypto';
 
 import { GenericContainer, GenericStartedContainer, StartedTestContainer } from './GenericContainer';
 
@@ -7,9 +7,9 @@ const POSTGRES_PORT = 5432;
 export class PostgreSqlContainer extends GenericContainer {
   protected database = 'test';
 
-  protected username = uuidv4();
+  protected username = randomUUID();
 
-  protected password = uuidv4();
+  protected password = randomUUID();
 
   constructor(image: string = 'postgres:14.5') {
     super(image);
