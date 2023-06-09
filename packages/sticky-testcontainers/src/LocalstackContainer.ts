@@ -26,7 +26,7 @@ export class LocalstackContainer extends GenericContainer {
   public async start(): Promise<StartedLocalstackContainer> {
     this.withStartupTimeout(120_000)
       .withEnvironment({
-        MAIN_CONTAINER_NAME: this.name,
+        MAIN_CONTAINER_NAME: this.opts.name!,
         DEBUG: '1',
         DEFAULT_REGION: this.region,
       })
