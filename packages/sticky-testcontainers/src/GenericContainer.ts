@@ -1,6 +1,6 @@
 import { randomUUID } from 'node:crypto';
 
-import { AbstractStartedContainer,GenericContainer as AbstractGenericContainer } from 'testcontainers';
+import { AbstractStartedContainer, GenericContainer as AbstractGenericContainer } from 'testcontainers';
 
 export type { StartedTestContainer } from 'testcontainers';
 
