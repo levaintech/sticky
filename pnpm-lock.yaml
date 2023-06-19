@@ -24,8 +24,8 @@ importers:
   packages/docs:
     devDependencies:
       '@contentedjs/contented':
-        specifier: 3.0.0
-        version: 3.0.0(typanion@3.9.0)
+        specifier: 3.0.1
+        version: 3.0.1(typanion@3.9.0)
 
   packages/eslint-config:
     dependencies:
@@ -481,12 +481,12 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: false
 
-  /@contentedjs/contented-pipeline-jest-md@3.0.0:
-    resolution: {integrity: sha512-UAM5vWGOtkuwzWy8hvCmQs4Jm+xMtaqXXEzMRA/xH0SI1saVwuRzBrK2rBymVYUxbE2im+18qh4AZjg1r4Re7A==}
+  /@contentedjs/contented-pipeline-jest-md@3.0.1:
+    resolution: {integrity: sha512-27h38ISQOmGOhPYL7FQxd9qobZC9/2GxfM4KcAZMfz9l9IDfDAsND0O1itzfRRTi9GVzv4BotSbNRVCoRSdu0A==}
     dependencies:
       '@babel/parser': 7.22.5
       '@babel/types': 7.22.5
-      '@contentedjs/contented-pipeline-md': 3.0.0
+      '@contentedjs/contented-pipeline-md': 3.0.1
       strip-indent: 4.0.0
       unified: 10.1.2
       vfile: 5.3.7
@@ -494,10 +494,10 @@ packages:
       - supports-color
     dev: true
 
-  /@contentedjs/contented-pipeline-md@3.0.0:
-    resolution: {integrity: sha512-FNQxwBaHjBB+IA8E+0AirIrYmaJVwq/y1GfXVlvpsyrOKAXxldeXIj6Rl28MYc0gofC88GGYHJjnOjHrNukSgQ==}
+  /@contentedjs/contented-pipeline-md@3.0.1:
+    resolution: {integrity: sha512-e6WPx5Zr7wT5CYpSQ/joRi3UreLoNJwS6xxt0+/KpHkWyhfm2K7hZABPUFkeicjWl4N1x9HZQ71ltGTSeqqMwA==}
     dependencies:
-      '@contentedjs/contented-pipeline': 3.0.0
+      '@contentedjs/contented-pipeline': 3.0.1
       '@jsdevtools/rehype-toc': 3.0.2
       '@leafac/html': 3.0.2
       '@leafac/rehype-shiki': 2.2.1(shiki@0.11.1)
@@ -525,29 +525,29 @@ packages:
       - supports-color
     dev: true
 
-  /@contentedjs/contented-pipeline@3.0.0:
-    resolution: {integrity: sha512-oHcva/aot8M9/b9QgWVmMLEXSQqRrWjFyFcFN1abJhydk7QdF8jfYpCjnSC6bCgVq8cz/8JdiofhmAaJygG8cA==}
+  /@contentedjs/contented-pipeline@3.0.1:
+    resolution: {integrity: sha512-+sYgkpv81j9d2/J21ya3Cr2XKLGLDJbPdvizMAoUqOJPYXiFnU6Qeo5XSv4eXuMz2w515bocE3fBzH6pKFArmw==}
     dependencies:
       '@sindresorhus/slugify': 2.2.1
     dev: true
 
-  /@contentedjs/contented-processor@3.0.0:
-    resolution: {integrity: sha512-2Q2p6b65n2lCB+5wqrJBrJgEd/Xso4S1ZGqo6JhzrUVuhjAKFctPfRGKLdh5blpHnFSVNSMuRv3O9PA/qymfqg==}
+  /@contentedjs/contented-processor@3.0.1:
+    resolution: {integrity: sha512-SZZJuDsOzCigpAV4Ic6rQLiFO4TGp/FARal3GqBjketInM0Ph8uVCMHUnvZD/MThBKNPxn8E3ACcsCLlN+aRhA==}
     dependencies:
       '@babel/generator': 7.22.5
-      '@contentedjs/contented-pipeline': 3.0.0
-      '@contentedjs/contented-pipeline-jest-md': 3.0.0
-      '@contentedjs/contented-pipeline-md': 3.0.0
+      '@contentedjs/contented-pipeline': 3.0.1
+      '@contentedjs/contented-pipeline-jest-md': 3.0.1
+      '@contentedjs/contented-pipeline-md': 3.0.1
       minimatch: 5.1.6
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@contentedjs/contented@3.0.0(typanion@3.9.0):
-    resolution: {integrity: sha512-hWzpE3qpp4lfa6b6MmM8OcTCxzRq/jV2Bo4XA0vrS2KK1i2Ts5Z2X7KQJKDA2nZEbWCVECD6/BlqY+7uva6juQ==}
+  /@contentedjs/contented@3.0.1(typanion@3.9.0):
+    resolution: {integrity: sha512-eDj9cfKlsxWWmLHKryBunNBeMCNFLOmfgM31At5LX6IrF2nrbpE4URUlJ9nz53f0MZhJL8jWo20DgRDKQ2AF/g==}
     hasBin: true
     dependencies:
-      '@contentedjs/contented-processor': 3.0.0
+      '@contentedjs/contented-processor': 3.0.1
       '@parcel/watcher': 2.1.0
       clipanion: 3.2.1(typanion@3.9.0)
       debounce: 1.2.1
