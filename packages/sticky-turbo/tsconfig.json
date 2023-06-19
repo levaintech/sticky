@@ -1,6 +1,0 @@
-{
-  "extends": "@birthdayresearch/sticky-typescript",
-  "compilerOptions": {
-    "rootDir": "./"
-  }
-}

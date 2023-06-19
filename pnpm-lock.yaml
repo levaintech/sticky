@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -8,18 +8,24 @@ importers:
 
   .:
     devDependencies:
-      '@birthdayresearch/eslint-config':
+      '@stickyjs/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
-      '@birthdayresearch/sticky-prettier':
+      '@stickyjs/prettier':
         specifier: workspace:*
-        version: link:packages/sticky-prettier
-      '@birthdayresearch/sticky-turbo':
+        version: link:packages/prettier
+      '@stickyjs/turbo':
         specifier: workspace:*
-        version: link:packages/sticky-turbo
-      '@birthdayresearch/sticky-typescript':
+        version: link:packages/turbo
+      '@stickyjs/typescript':
         specifier: workspace:*
-        version: link:packages/sticky-typescript
+        version: link:packages/typescript
+
+  packages/docs:
+    devDependencies:
+      '@birthdayresearch/contented':
+        specifier: 2.0.1
+        version: 2.0.1(typanion@3.9.0)
 
   packages/eslint-config:
     dependencies:
@@ -54,13 +60,7 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(@typescript-eslint/eslint-plugin@5.59.11)(eslint@8.43.0)
 
-  packages/sticky-docs:
-    devDependencies:
-      '@birthdayresearch/contented':
-        specifier: 2.0.1
-        version: 2.0.1(typanion@3.9.0)
-
-  packages/sticky-jest:
+  packages/jest:
     dependencies:
       '@types/jest':
         specifier: ^29.5.2
@@ -81,7 +81,7 @@ importers:
         specifier: ^3.6.2
         version: 3.6.2
 
-  packages/sticky-prettier:
+  packages/prettier:
     dependencies:
       husky:
         specifier: ^8.0.3
@@ -99,15 +99,15 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0(prettier@2.8.8)
 
-  packages/sticky-testcontainers:
+  packages/testcontainers:
     dependencies:
       testcontainers:
         specifier: ^9.8.0
         version: 9.8.0
     devDependencies:
-      '@birthdayresearch/sticky-turbo-jest':
+      '@stickyjs/turbo-jest':
         specifier: workspace:*
-        version: link:../sticky-turbo-jest
+        version: link:../turbo-jest
       '@types/node-fetch':
         specifier: 2.6.2
         version: 2.6.2
@@ -115,26 +115,26 @@ importers:
         specifier: 2.6.7
         version: 2.6.7
 
-  packages/sticky-turbo:
+  packages/turbo:
     dependencies:
       turbo:
         specifier: 1.10.3
         version: 1.10.3
     devDependencies:
-      '@birthdayresearch/sticky-jest':
+      '@stickyjs/jest':
         specifier: workspace:*
-        version: link:../sticky-jest
+        version: link:../jest
 
-  packages/sticky-turbo-jest:
+  packages/turbo-jest:
     dependencies:
-      '@birthdayresearch/sticky-jest':
+      '@stickyjs/jest':
         specifier: workspace:*
-        version: link:../sticky-jest
-      '@birthdayresearch/sticky-turbo':
+        version: link:../jest
+      '@stickyjs/turbo':
         specifier: workspace:*
-        version: link:../sticky-turbo
+        version: link:../turbo
 
-  packages/sticky-typescript:
+  packages/typescript:
     dependencies:
       typescript:
         specifier: 4.9.5

@@ -1,4 +1,4 @@
-const { Turbo } = require('@birthdayresearch/sticky-turbo');
+const { Turbo } = require('@stickyjs/turbo');
 
 module.exports = async function (_, project) {
   if (isTurbo()) {

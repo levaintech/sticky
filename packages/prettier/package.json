@@ -1,8 +1,8 @@
 {
-  "name": "@birthdayresearch/sticky-prettier",
+  "name": "@stickyjs/prettier",
   "version": "0.0.0",
   "repository": {
-    "url": "git+https://github.com/BirthdayResearch/sticky"
+    "url": "git+https://github.com/levaintech/sticky"
   },
   "main": "index.js",
   "files": [

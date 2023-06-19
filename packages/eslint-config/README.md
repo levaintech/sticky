@@ -1,13 +1,13 @@
 # Eslint Config
 
-`@birthdayresearch/eslint-config`
+`@stickyjs/eslint-config`
 
 Within your `package.json`:
 
 ```json
 {
   "eslintConfig": {
-    "extends": ["@birthdayresearch"],
+    "extends": ["@stickyjs"],
     "parserOptions": {
       "project": "./tsconfig.json"
     }

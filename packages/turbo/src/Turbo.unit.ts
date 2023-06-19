@@ -32,10 +32,6 @@ it(`turbo.planPackages('test') should generate a list of packages to run`, async
   const turbo = new Turbo(process.cwd());
   const packages = turbo.planPackages('test');
   expect(packages).toStrictEqual(
-    expect.arrayContaining([
-      '@birthdayresearch/sticky-jest',
-      '@birthdayresearch/sticky-testcontainers',
-      '@birthdayresearch/sticky-turbo',
-    ]),
+    expect.arrayContaining(['@stickyjs/jest', '@stickyjs/testcontainers', '@stickyjs/turbo']),
   );
 });

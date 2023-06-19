@@ -1,6 +1,6 @@
 # Test Containers
 
-`@birthdayresearch/sticky-testcontainers`
+`@stickyjs/testcontainers`
 
 Providing opinionated containers that follows the `testcontainers-node` Fluent API design.
 
@@ -11,7 +11,7 @@ Providing opinionated containers that follows the `testcontainers-node` Fluent A
 Example with PostgresSqlContainer:
 
 ```ts
-import { PostgreSqlContainer, StartedPostgreSqlContainer } from '@birthdayresearch/sticky-testcontainers';
+import { PostgreSqlContainer, StartedPostgreSqlContainer } from '@stickyjs/testcontainers';
 
 let postgres: StartedPostgreSqlContainer;
 
@@ -27,7 +27,7 @@ afterAll(async () => {
 With network:
 
 ```ts
-import { PostgreSqlContainer, RedisContainer, Network } from '@birthdayresearch/sticky-testcontainers';
+import { PostgreSqlContainer, RedisContainer, Network } from '@stickyjs/testcontainers';
 
 beforeAll(async () => {
   const network = await new Network().start();

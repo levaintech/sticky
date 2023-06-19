@@ -1,4 +1,4 @@
-const preset = require('@birthdayresearch/sticky-jest/jest-preset');
+const preset = require('@stickyjs/jest/jest-preset');
 
 module.exports = {
   ...preset,

@@ -1,0 +1,39 @@
+{
+  "name": "@stickyjs/jest",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/levaintech/sticky"
+  },
+  "main": "./dist/index.js",
+  "source": "./src/index.ts",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "jest-preset.js"
+  ],
+  "scripts": {
+    "build": "tsc -b ./tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "@stickyjs"
+    ]
+  },
+  "jest": {
+    "preset": "./jest-preset.js"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.2",
+    "jest": "29.5.0",
+    "jest-extended": "4.0.0",
+    "ts-jest": "29.1.0",
+    "wait-for-expect": "^3.0.2",
+    "whatwg-fetch": "^3.6.2"
+  }
+}
