@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ['simple-import-sort', 'check-file', 'unused-imports'],
+  plugins: ['simple-import-sort', 'check-file', 'unused-imports', 'no-only-tests'],
   extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier', 'plugin:anti-trojan-source/recommended'],
   ignorePatterns: ['dist'],
   rules: {
@@ -70,6 +70,11 @@ module.exports = {
           'Do not use ambiguous identifiers like `id`, use context identifiers like `userId` or `postId` instead.',
       },
     ],
+
+    /**
+     * disallow .only to be used in tests
+     */
+    'no-only-tests/no-only-tests': 'error',
   },
   env: {
     node: true,
