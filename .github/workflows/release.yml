@@ -50,6 +50,7 @@ jobs:
       - run: pnpm -r publish --access public --tag latest --no-git-checks
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          NPM_CONFIG_PROVENANCE: true
 
       - run: npm config delete "//registry.npmjs.org/:_authToken" --location=project
         if: always()
