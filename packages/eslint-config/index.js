@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ['simple-import-sort', 'check-file', 'unused-imports'],
-  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier', 'plugin:anti-trojan-source/recommended'],
   ignorePatterns: ['dist'],
   rules: {
     'class-methods-use-this': 'off',
@@ -22,7 +22,9 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
 
-    // check-file
+    /**
+     * Enforce PascalCase for filenames.
+     */
     'check-file/filename-naming-convention': [
       'error',
       {
@@ -33,12 +35,41 @@ module.exports = {
       },
     ],
 
+    '@typescript-eslint/no-throw-literal': 'warn',
+
+    '@typescript-eslint/no-floating-promises': 'error',
+    'no-void': [
+      'error',
+      {
+        allowAsStatement: true,
+      },
+    ],
+
     // @typescript-eslint
     '@typescript-eslint/no-use-before-define': 'off',
 
+    /**
+     * Separates out the `no-unused-vars` rule depending on it being an import statement in the AST and providing
+     * an auto-fix rule to remove the nodes if they are imports.
+     * With this, we can now target test files with `'unused-imports/no-unused-vars': 'off'` for testing DX.
+     */
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': 'error',
+
+    /**
+     * Do not use ambiguous identifiers like `id`, use context identifiers like `userId` or `postId` instead.
+     * Please do not ignore this rule completely, for scenarios where you need to use `id` as a variable name,
+     * use `// eslint-disable-next-line no-restricted-properties` to disable this rule for that line.
+     */
+    'no-restricted-properties': [
+      'error',
+      {
+        property: 'id',
+        message:
+          'Do not use ambiguous identifiers like `id`, use context identifiers like `userId` or `postId` instead.',
+      },
+    ],
   },
   env: {
     node: true,
@@ -48,13 +79,26 @@ module.exports = {
     {
       files: ['**/*.unit.ts', '**/*.i9n.ts', '**/*.e2e.ts'],
       rules: {
+        /**
+         * To cater for complex test scenarios, where we need to scope blocks. This allows variables to be reused,
+         * so we don't have to create `const getObject` and `const updatedObject` for each scenario.
+         * We can just use `const object`.
+         */
         'no-lone-blocks': 'off',
 
+        /**
+         * Separates out the `no-unused-vars` rule depending on it being an import statement in the AST and providing
+         * an auto-fix rule to remove the nodes if they are imports.
+         * With this, we can now target test files with `'unused-imports/no-unused-vars': 'off'` for testing DX.
+         */
         'unused-imports/no-unused-imports': 'error',
         'unused-imports/no-unused-vars': 'off',
       },
     },
     {
+      /**
+       * Enforce PascalCase for filenames, ignoring common files like `index.ts`, `cli.ts`, `main.ts`.
+       */
       files: ['src/**/{index,cli,main}.ts'],
       rules: {
         'check-file/filename-naming-convention': ['off'],
