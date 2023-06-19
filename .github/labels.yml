@@ -53,17 +53,21 @@
 - color: fbca04
   name: area/workflow
 - color: fbca04
+  name: area/docs
+- color: fbca04
+  name: area/eslint-config
+- color: fbca04
   name: area/jest
 - color: fbca04
   name: area/prettier
+- color: fbca04
+  name: area/testcontainers
 - color: fbca04
   name: area/turbo
 - color: fbca04
   name: area/turbo-jest
 - color: fbca04
   name: area/typescript
-- color: fbca04
-  name: area/eslint-config
 
 # Priority
 - color: d93f0b

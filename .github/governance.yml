@@ -36,12 +36,14 @@ issue:
     - prefix: area
       list:
         - workflow
+        - docs
+        - eslint-config
         - jest
         - prettier
+        - testcontainers
         - turbo
         - turbo-jest
         - typescript
-        - config
       multiple: true
       needs:
         comment: |

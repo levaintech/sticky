@@ -36,6 +36,16 @@ labels:
     matcher:
       files: '.github/**'
 
+  - label: area/docs
+    sync: true
+    matcher:
+      files: 'packages/docs/**'
+
+  - label: area/eslint-config
+    sync: true
+    matcher:
+      files: 'packages/eslint-config/**'
+
   - label: area/jest
     sync: true
     matcher:
@@ -45,6 +55,11 @@ labels:
     sync: true
     matcher:
       files: 'packages/prettier/**'
+
+  - label: area/testcontainers
+    sync: true
+    matcher:
+      files: 'packages/testcontainers/**'
 
   - label: area/turbo
     sync: true
@@ -60,11 +75,6 @@ labels:
     sync: true
     matcher:
       files: 'packages/typescript/**'
-
-  - label: area/eslint-config
-    sync: true
-    matcher:
-      files: 'packages/eslint-config/**'
 
 checks:
   - context: 'Semantic Pull Request'
