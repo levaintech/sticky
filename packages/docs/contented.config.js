@@ -1,8 +1,8 @@
-/** @type {import('@birthdayresearch/contented').ContentedConfig} */
+/** @type {import('@contentedjs/contented').ContentedConfig} */
 const config = {
   preview: {
     name: 'Sticky',
-    url: 'https://sticky.birthday.dev',
+    url: 'https://stickyjs.netlify.app',
     github: {
       url: 'https://github.com/levaintech/sticky',
     },
