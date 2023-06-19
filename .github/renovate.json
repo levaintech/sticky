@@ -9,21 +9,13 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "matchPackagePatterns": ["node", "@types/node", "npm", "pnpm", "yarn"],
+      "matchPackageNames": ["node", "npm", "pnpm", "yarn", "typescript", "@types/node"],
       "groupName": "engines",
       "enabled": false
     },
     {
-      "matchPackagePatterns": ["eslint"],
-      "groupName": "eslint"
-    },
-    {
-      "matchPackagePatterns": ["jest", "wait-for-expect"],
-      "groupName": "jest"
-    },
-    {
-      "matchPackagePatterns": ["^@contentedjs/contented"],
-      "groupName": "@contentedjs/contented"
+      "matchPackagePatterns": ["^@contentedjs/"],
+      "groupName": "@levaintech/contented"
     }
   ]
 }
