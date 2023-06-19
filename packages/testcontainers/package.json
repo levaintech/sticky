@@ -1,8 +1,8 @@
 {
-  "name": "@birthdayresearch/sticky-turbo",
+  "name": "@stickyjs/testcontainers",
   "version": "0.0.0",
   "repository": {
-    "url": "git+https://github.com/BirthdayResearch/sticky"
+    "url": "git+https://github.com/levaintech/sticky"
   },
   "main": "./dist/index.js",
   "source": "./src/index.ts",
@@ -30,16 +30,19 @@
       "project": "./tsconfig.json"
     },
     "extends": [
-      "@birthdayresearch"
+      "@stickyjs"
     ]
   },
   "jest": {
-    "preset": "@birthdayresearch/sticky-jest"
+    "displayName": "test",
+    "preset": "@stickyjs/turbo-jest"
   },
   "dependencies": {
-    "turbo": "1.10.3"
+    "testcontainers": "^9.8.0"
   },
   "devDependencies": {
-    "@birthdayresearch/sticky-jest": "workspace:*"
+    "@stickyjs/turbo-jest": "workspace:*",
+    "@types/node-fetch": "2.6.2",
+    "node-fetch": "2.6.7"
   }
 }

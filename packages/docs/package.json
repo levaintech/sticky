@@ -1,8 +1,8 @@
 {
-  "name": "@birthdayresearch/sticky-docs",
+  "name": "@stickyjs/docs",
   "version": "0.0.0",
   "repository": {
-    "url": "git+https://github.com/BirthdayResearch/sticky"
+    "url": "git+https://github.com/levaintech/sticky"
   },
   "type": "module",
   "main": "dist/index.js",

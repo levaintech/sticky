@@ -1,11 +1,11 @@
 # Jest
 
-`@birthdayresearch/sticky-jest`
+`@stickyjs/jest`
 
 ```json
 {
   "jest": {
-    "preset": "@birthdayresearch/sticky-jest"
+    "preset": "@stickyjs/jest"
   }
 }
 ```
@@ -15,7 +15,7 @@
 ### `wait-for-expect`
 
 ```ts
-import { waitForExpect } from '@birthdayresearch/sticky-jest';
+import { waitForExpect } from '@stickyjs/jest';
 
 it('should wait-for-expect', async () => {
   await waitForExpect(() => {}, 100);

@@ -1,6 +1,6 @@
 # Prettier
 
-`@birthdayresearch/sticky-prettier`
+`@stickyjs/prettier`
 
 This module also installs `prettier`, `husky` and `lint-staged`.
 
@@ -8,7 +8,7 @@ Within your `package.json`:
 
 ```json
 {
-  "prettier": "@birthdayresearch/sticky-prettier",
+  "prettier": "@stickyjs/prettier",
   "lint-staged": {
     "*": "prettier --write --ignore-unknown"
   }

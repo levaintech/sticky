@@ -5,7 +5,7 @@ import { Turbo } from './Turbo';
 it(`turbo.runTask('invalid-script') should be ignored; porting a desired behavior that was present in <1.8.0`, async () => {
   const turbo = new Turbo(process.cwd());
   turbo.runTask('invalid-script', {
-    filter: `@levain-dev/sticky-turbo^...`,
+    filter: `@stickyjs/turbo^...`,
   });
 });
 
@@ -15,7 +15,7 @@ it(`turbo.runTasks('invalid-script') should be ignored; porting a desired behavi
     {
       task: 'invalid-script',
       opts: {
-        filter: `@levain-dev/sticky-turbo^...`,
+        filter: `@stickyjs/turbo^...`,
       },
     },
   ]);
@@ -32,10 +32,6 @@ it(`turbo.planPackages('test') should generate a list of packages to run`, async
   const turbo = new Turbo(process.cwd());
   const packages = turbo.planPackages('test');
   expect(packages).toStrictEqual(
-    expect.arrayContaining([
-      '@birthdayresearch/sticky-jest',
-      '@birthdayresearch/sticky-testcontainers',
-      '@birthdayresearch/sticky-turbo',
-    ]),
+    expect.arrayContaining(['@stickyjs/jest', '@stickyjs/testcontainers', '@stickyjs/turbo']),
   );
 });

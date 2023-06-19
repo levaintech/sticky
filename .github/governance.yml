@@ -36,12 +36,14 @@ issue:
     - prefix: area
       list:
         - workflow
-        - sticky-jest
-        - sticky-prettier
-        - sticky-turbo
-        - sticky-turbo-jest
-        - sticky-typescript
+        - docs
         - eslint-config
+        - jest
+        - prettier
+        - testcontainers
+        - turbo
+        - turbo-jest
+        - typescript
       multiple: true
       needs:
         comment: |

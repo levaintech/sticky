@@ -1,5 +1,5 @@
 {
-  "name": "@birthdayresearch/sticky",
+  "name": "@stickyjs/workspace",
   "version": "0.0.0",
   "private": true,
   "files": [],
@@ -15,16 +15,16 @@
   "lint-staged": {
     "*": "prettier --write --ignore-unknown"
   },
-  "prettier": "@birthdayresearch/sticky-prettier",
+  "prettier": "@stickyjs/prettier",
   "devDependencies": {
-    "@birthdayresearch/eslint-config": "workspace:*",
-    "@birthdayresearch/sticky-prettier": "workspace:*",
-    "@birthdayresearch/sticky-turbo": "workspace:*",
-    "@birthdayresearch/sticky-typescript": "workspace:*"
+    "@stickyjs/eslint-config": "workspace:*",
+    "@stickyjs/prettier": "workspace:*",
+    "@stickyjs/turbo": "workspace:*",
+    "@stickyjs/typescript": "workspace:*"
   },
-  "packageManager": "pnpm@8.6.1",
+  "packageManager": "pnpm@8.6.2",
   "engines": {
     "node": "^18.0.0",
-    "pnpm": "^8.6.1"
+    "pnpm": "^8.6.2"
   }
 }

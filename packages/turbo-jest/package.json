@@ -1,0 +1,15 @@
+{
+  "name": "@stickyjs/turbo-jest",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git+https://github.com/levaintech/sticky"
+  },
+  "files": [
+    "jest-preset.js",
+    "jest-turbo.js"
+  ],
+  "dependencies": {
+    "@stickyjs/jest": "workspace:*",
+    "@stickyjs/turbo": "workspace:*"
+  }
+}

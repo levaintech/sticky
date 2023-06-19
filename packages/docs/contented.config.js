@@ -4,7 +4,7 @@ const config = {
     name: 'Sticky',
     url: 'https://sticky.birthday.dev',
     github: {
-      url: 'https://github.com/birthdayresearch/sticky',
+      url: 'https://github.com/levaintech/sticky',
     },
   },
   processor: {

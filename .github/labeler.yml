@@ -36,35 +36,45 @@ labels:
     matcher:
       files: '.github/**'
 
-  - label: area/sticky-jest
+  - label: area/docs
     sync: true
     matcher:
-      files: 'packages/sticky-jest/**'
-
-  - label: area/sticky-prettier
-    sync: true
-    matcher:
-      files: 'packages/sticky-prettier/**'
-
-  - label: area/sticky-turbo
-    sync: true
-    matcher:
-      files: 'packages/sticky-turbo/**'
-
-  - label: area/sticky-turbo-jest
-    sync: true
-    matcher:
-      files: 'packages/sticky-turbo-jest/**'
-
-  - label: area/sticky-typescript
-    sync: true
-    matcher:
-      files: 'packages/sticky-typescript/**'
+      files: 'packages/docs/**'
 
   - label: area/eslint-config
     sync: true
     matcher:
       files: 'packages/eslint-config/**'
+
+  - label: area/jest
+    sync: true
+    matcher:
+      files: 'packages/jest/**'
+
+  - label: area/prettier
+    sync: true
+    matcher:
+      files: 'packages/prettier/**'
+
+  - label: area/testcontainers
+    sync: true
+    matcher:
+      files: 'packages/testcontainers/**'
+
+  - label: area/turbo
+    sync: true
+    matcher:
+      files: 'packages/turbo/**'
+
+  - label: area/turbo-jest
+    sync: true
+    matcher:
+      files: 'packages/turbo-jest/**'
+
+  - label: area/typescript
+    sync: true
+    matcher:
+      files: 'packages/typescript/**'
 
 checks:
   - context: 'Semantic Pull Request'
