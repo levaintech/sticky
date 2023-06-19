@@ -38,7 +38,7 @@
     "preset": "@stickyjs/turbo-jest"
   },
   "dependencies": {
-    "testcontainers": "^9.8.0"
+    "testcontainers": "^9.9.1"
   },
   "devDependencies": {
     "@stickyjs/turbo-jest": "workspace:*",
