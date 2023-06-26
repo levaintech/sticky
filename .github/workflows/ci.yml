@@ -28,7 +28,7 @@ jobs:
       - run: pnpm build
 
   lint_prettier:
-    name: Lint (prettier)
+    name: Lint [prettier]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
@@ -45,7 +45,7 @@ jobs:
       - run: pnpm prettier --check .
 
   lint_eslint:
-    name: Lint (eslint)
+    name: Lint [eslint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
