@@ -27,27 +27,8 @@ jobs:
 
       - run: pnpm build
 
-  Test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-
-      - run: corepack enable pnpm
-
-      - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
-        with:
-          node-version-file: '.nvmrc'
-          cache: pnpm
-
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm test -- -- --maxWorkers=100% --coverage
-
-      - uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
-        with:
-          fail_ci_if_error: true
-
   lint_prettier:
-    name: Lint (prettier)
+    name: Lint [prettier]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
@@ -64,7 +45,7 @@ jobs:
       - run: pnpm prettier --check .
 
   lint_eslint:
-    name: Lint (eslint)
+    name: Lint [eslint]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
@@ -79,3 +60,64 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm turbo run lint
+
+  test_plan:
+    name: Test [plan]
+    runs-on: ubuntu-latest
+    outputs:
+      packages: ${{ steps.plan.outputs.packages }}
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+
+      - run: corepack enable pnpm
+
+      - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
+        with:
+          node-version-file: '.nvmrc'
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      # this step is only required in this repo because the cli source is not yet built
+      - run: pnpm turbo run build --filter=@stickyjs/turbo
+
+      - id: plan
+        run: |
+          echo 'packages<<EOF' >> $GITHUB_OUTPUT
+          pnpm sticky-turbo plan test >> $GITHUB_OUTPUT
+          echo 'EOF' >> $GITHUB_OUTPUT
+
+  test_run:
+    name: Test [run]
+    runs-on: ubuntu-latest
+    needs: test_plan
+    strategy:
+      fail-fast: false
+      matrix:
+        package: ${{ fromJSON(needs.test_plan.outputs.packages) }}
+    steps:
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
+
+      - run: corepack enable pnpm
+
+      - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
+        with:
+          node-version-file: '.nvmrc'
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm turbo run test --concurrency=1 --filter=${{ matrix.package }} -- --coverage --forceExit
+
+      - uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
+
+  test_completed:
+    name: Test [completed]
+    runs-on: ubuntu-latest
+    needs: test_run
+    if: always()
+    steps:
+      - run: |
+          if ${{ contains(needs.*.result, 'failure') || contains(needs.*.result, 'skipped') || contains(needs.*.result, 'cancelled') }} ; then
+            exit 1
+          fi
