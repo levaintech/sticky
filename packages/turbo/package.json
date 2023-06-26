@@ -7,6 +7,9 @@
   "main": "./dist/index.js",
   "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
+  "bin": {
+    "sticky-turbo": "./cli.js"
+  },
   "files": [
     "dist/**"
   ],
@@ -35,6 +38,9 @@
   },
   "jest": {
     "preset": "@stickyjs/jest"
+  },
+  "dependencies": {
+    "clipanion": "3.2.1"
   },
   "devDependencies": {
     "@stickyjs/jest": "workspace:*",

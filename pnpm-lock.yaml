@@ -128,6 +128,10 @@ importers:
         version: 2.6.11
 
   packages/turbo:
+    dependencies:
+      clipanion:
+        specifier: 3.2.1
+        version: 3.2.1(typanion@3.9.0)
     devDependencies:
       '@stickyjs/jest':
         specifier: workspace:*
@@ -1822,7 +1826,6 @@ packages:
       typanion: '*'
     dependencies:
       typanion: 3.9.0
-    dev: true
 
   /cliui@7.0.4:
     resolution: {integrity: sha512-OcRE68cOsVMXp1Yvonl/fzkQOyjLSu/8bhPDfQt0e0/Eb283TKP20Fs2MqoPsr9SwA595rRCA+QMzYc9nBP+JQ==}
@@ -5832,7 +5835,6 @@ packages:
 
   /typanion@3.9.0:
     resolution: {integrity: sha512-7yPk67IIquhKQcUXOBM27vDuGmZf6oJbEmzgVfDniHCkT6+z4JnKY85nKqbstoec8Kp7hD06TP3Kc98ij43PIg==}
-    dev: true
 
   /type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
