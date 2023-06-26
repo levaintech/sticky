@@ -27,25 +27,6 @@ jobs:
 
       - run: pnpm build
 
-  Test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
-
-      - run: corepack enable pnpm
-
-      - uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0
-        with:
-          node-version-file: '.nvmrc'
-          cache: pnpm
-
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm test -- -- --maxWorkers=100% --coverage
-
-      - uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
-        with:
-          fail_ci_if_error: true
-
   lint_prettier:
     name: Lint (prettier)
     runs-on: ubuntu-latest
@@ -103,7 +84,7 @@ jobs:
       - id: plan
         run: |
           echo 'packages<<EOF' >> $GITHUB_OUTPUT
-          pnpm sticky-turbo plan ${{ inputs.script }} >> $GITHUB_OUTPUT
+          pnpm sticky-turbo plan test >> $GITHUB_OUTPUT
           echo 'EOF' >> $GITHUB_OUTPUT
 
   test_run:
