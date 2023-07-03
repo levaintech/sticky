@@ -2,6 +2,10 @@ module.exports = {
   plugins: ['simple-import-sort', 'check-file', 'unused-imports', 'no-only-tests'],
   extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier', 'plugin:anti-trojan-source/recommended'],
   ignorePatterns: ['dist'],
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+  },
   rules: {
     'class-methods-use-this': 'off',
     'max-classes-per-file': 'off',
