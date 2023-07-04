@@ -57,8 +57,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       eslint-plugin-check-file:
-        specifier: ^2.4.0
-        version: 2.4.0(eslint@8.44.0)
+        specifier: ^2.5.0
+        version: 2.5.0(eslint@8.44.0)
       eslint-plugin-import:
         specifier: ^2.27.5
         version: 2.27.5(@typescript-eslint/parser@5.61.0)(eslint@8.44.0)
@@ -2369,8 +2369,8 @@ packages:
       anti-trojan-source: 1.4.1
     dev: false
 
-  /eslint-plugin-check-file@2.4.0(eslint@8.44.0):
-    resolution: {integrity: sha512-qQUCqeNA/Pn5BY3t88u6egF/wdLx0+ofbWrOtjCGj1ZqS1z2GaqV4JiWmYggKLQZqeSBl1yKQF9LL+wfOxavWg==}
+  /eslint-plugin-check-file@2.5.0(eslint@8.44.0):
+    resolution: {integrity: sha512-FP5FZbJPy2jb9dzVjg/GMNK3l24ZSWuaOwKIEzYjIxUmC8OTKMmC93Mm2s0XKulNi9xoqlX5VyCB0NZfz7MX3g==}
     engines: {node: 14.x || >= 16}
     peerDependencies:
       eslint: '>=7.28.0'
