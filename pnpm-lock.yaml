@@ -114,8 +114,8 @@ importers:
   packages/testcontainers:
     dependencies:
       testcontainers:
-        specifier: ^9.10.1
-        version: 9.10.1
+        specifier: ^9.11.0
+        version: 9.11.0
     devDependencies:
       '@stickyjs/turbo-jest':
         specifier: workspace:*
@@ -5163,6 +5163,14 @@ packages:
       sisteransi: 1.0.5
     dev: false
 
+  /proper-lockfile@4.1.2:
+    resolution: {integrity: sha512-TjNPblN4BwAWMXU8s9AEz4JmQxnD1NNL7bNOY/AKUzyamc379FWASUhc/K1pL2noVb+XmZKLL68cjzLsiOAMaA==}
+    dependencies:
+      graceful-fs: 4.2.10
+      retry: 0.12.0
+      signal-exit: 3.0.7
+    dev: false
+
   /properties-reader@2.2.0:
     resolution: {integrity: sha512-CgVcr8MwGoBKK24r9TwHfZkLLaNFHQ6y4wgT9w/XzdpacOOi5ciH4hcuLechSDAwXsfrGQtI2JTutY2djOx2Ow==}
     engines: {node: '>=10'}
@@ -5422,6 +5430,11 @@ packages:
     dependencies:
       onetime: 5.1.2
       signal-exit: 3.0.7
+    dev: false
+
+  /retry@0.12.0:
+    resolution: {integrity: sha512-9LkiTwjUh6rT555DtE9rTX+BKByPfrMzEAtnlEtdEwr3Nkffwiihqe2bWADg+OQRjt9gl6ICdmB/ZFDCGAtSow==}
+    engines: {node: '>= 4'}
     dev: false
 
   /reusify@1.0.4:
@@ -5848,8 +5861,8 @@ packages:
       minimatch: 3.1.2
     dev: false
 
-  /testcontainers@9.10.1:
-    resolution: {integrity: sha512-+kTLawnZCiSWTL2Iljx+CtYbWIPzfTe8KiouFbTvJ8lAYN5esAj+bT2AKWcixotV4ddKCAbL6ESn35J0jvFCNg==}
+  /testcontainers@9.11.0:
+    resolution: {integrity: sha512-U6pUvxz7UiK4TffBMF8qwMJxyHfFi5RiJjfXAfrfOY3xMdEYZABTXhAk2cZUmuxdSVZ5STK9KuqzV+OEAbH9DQ==}
     engines: {node: '>= 10.16'}
     dependencies:
       '@balena/dockerignore': 1.0.2
@@ -5863,6 +5876,7 @@ packages:
       dockerode: 3.3.5
       get-port: 5.1.1
       node-fetch: 2.6.12
+      proper-lockfile: 4.1.2
       properties-reader: 2.2.0
       ssh-remote-port-forward: 1.0.4
       tar-fs: 2.1.1
