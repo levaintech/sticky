@@ -114,8 +114,8 @@ importers:
   packages/testcontainers:
     dependencies:
       testcontainers:
-        specifier: ^9.11.0
-        version: 9.11.0
+        specifier: ^9.12.0
+        version: 9.12.0
     devDependencies:
       '@stickyjs/turbo-jest':
         specifier: workspace:*
@@ -5849,8 +5849,8 @@ packages:
       minimatch: 3.1.2
     dev: false
 
-  /testcontainers@9.11.0:
-    resolution: {integrity: sha512-U6pUvxz7UiK4TffBMF8qwMJxyHfFi5RiJjfXAfrfOY3xMdEYZABTXhAk2cZUmuxdSVZ5STK9KuqzV+OEAbH9DQ==}
+  /testcontainers@9.12.0:
+    resolution: {integrity: sha512-zmjLTAUqCiDvhDq7TCwcyhI3m/cXXKGnhyLLJ9pgh53VgG9O+P+opX1pIx28aYTUQ7Yu6b5sJf0xoIuxoiclWg==}
     engines: {node: '>= 10.16'}
     dependencies:
       '@balena/dockerignore': 1.0.2
