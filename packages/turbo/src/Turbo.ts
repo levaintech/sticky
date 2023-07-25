@@ -7,7 +7,10 @@ import { PackageJson } from './PackageJson';
 export class Turbo {
   private readonly rootDir: string;
 
-  constructor(protected readonly cwd: string, depth = 4) {
+  constructor(
+    protected readonly cwd: string,
+    depth = 4,
+  ) {
     const path = findRootTurboJsonPath(cwd, depth);
     if (path === undefined) {
       throw new Error('turbo.json not found');
