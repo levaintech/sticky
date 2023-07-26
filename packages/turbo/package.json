@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@stickyjs/jest": "workspace:*",
-    "turbo": "1.10.11"
+    "turbo": "1.10.12"
   },
   "peerDependencies": {
     "turbo": "*"
