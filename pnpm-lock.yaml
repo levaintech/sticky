@@ -57,8 +57,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
       eslint-plugin-check-file:
-        specifier: ^2.5.0
-        version: 2.5.0(eslint@8.45.0)
+        specifier: ^2.6.1
+        version: 2.6.1(eslint@8.45.0)
       eslint-plugin-import:
         specifier: ^2.27.5
         version: 2.27.5(@typescript-eslint/parser@6.2.0)(eslint@8.45.0)
@@ -2494,8 +2494,8 @@ packages:
       anti-trojan-source: 1.4.1
     dev: false
 
-  /eslint-plugin-check-file@2.5.0(eslint@8.45.0):
-    resolution: {integrity: sha512-FP5FZbJPy2jb9dzVjg/GMNK3l24ZSWuaOwKIEzYjIxUmC8OTKMmC93Mm2s0XKulNi9xoqlX5VyCB0NZfz7MX3g==}
+  /eslint-plugin-check-file@2.6.1(eslint@8.45.0):
+    resolution: {integrity: sha512-2I7cAboj6sC2CG0oHan1bMKZlk/nLz78TLc+YIiIFTCwlp/rGm0WtrGTcZ+65WWeDU3JY5OsKgEWG7TcL1H4iQ==}
     engines: {node: 14.x || >= 16}
     peerDependencies:
       eslint: '>=7.28.0'
@@ -2503,7 +2503,6 @@ packages:
       eslint: 8.45.0
       is-glob: 4.0.3
       micromatch: 4.0.5
-      requireindex: 1.2.0
     dev: false
 
   /eslint-plugin-import@2.27.5(@typescript-eslint/parser@6.2.0)(eslint@8.45.0):
@@ -5365,11 +5364,6 @@ packages:
   /require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
-    dev: false
-
-  /requireindex@1.2.0:
-    resolution: {integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==}
-    engines: {node: '>=0.10.5'}
     dev: false
 
   /resolve-cwd@3.0.0:
