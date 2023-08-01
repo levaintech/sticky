@@ -1,6 +1,7 @@
 {
   "name": "@stickyjs/docs",
   "version": "0.0.0",
+  "private": true,
   "repository": {
     "url": "git+https://github.com/levaintech/sticky"
   },
