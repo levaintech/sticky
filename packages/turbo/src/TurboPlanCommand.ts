@@ -1,5 +1,6 @@
+import * as process from 'node:process';
+
 import { Command, Option } from 'clipanion';
-import * as process from 'process';
 
 import { Turbo } from './Turbo';
 
