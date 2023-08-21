@@ -22,7 +22,7 @@ jobs:
             if (semver.match(/^[0-9]+\.[0-9]+\.[0-9]+$/)) {
                 return semver
             }
-            throw new Error('not semver')
+            throw new Error('not semver, ref: ${context.ref}')
           result-encoding: string
 
   npm:
