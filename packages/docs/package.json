@@ -16,6 +16,6 @@
     "write": "contented write"
   },
   "devDependencies": {
-    "@contentedjs/contented": "4.7.4"
+    "@contentedjs/contented": "5.0.1"
   }
 }
