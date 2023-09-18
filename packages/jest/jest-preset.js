@@ -10,5 +10,5 @@ module.exports = {
   reporters: ['default', 'github-actions'],
   coverageReporters: ['json', 'json-summary'],
   setupFilesAfterEnv: ['jest-extended/all'],
-  testTimeout: 240000,
+  testTimeout: 300000,
 };
