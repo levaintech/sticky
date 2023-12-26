@@ -30,8 +30,8 @@ importers:
   packages/docs:
     devDependencies:
       '@contentedjs/contented':
-        specifier: 6.2.0
-        version: 6.2.0(typanion@3.9.0)
+        specifier: 6.3.0
+        version: 6.3.0(typanion@3.9.0)
 
   packages/eslint-config:
     dependencies:
@@ -504,10 +504,10 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: false
 
-  /@contentedjs/contented-pipeline-md@6.2.0:
-    resolution: {integrity: sha512-UUhDImJyRFCrk6fjVxS6n6zqr9K5mibFdP1cWO68NQ3zH0teDIhYcgS/T74Z0zQMS0Xx+sAOgkQpV3+RBExLEA==}
+  /@contentedjs/contented-pipeline-md@6.3.0:
+    resolution: {integrity: sha512-lQky4vgWRMwIjM/2xy7DOZGmYgH0TcEjwQhB6vE7Dn77Gsfw/J8HLSZA5LxVDdTABdq5gw4ikhgoW9oAR7F6rg==}
     dependencies:
-      '@contentedjs/contented-pipeline': 6.2.0
+      '@contentedjs/contented-pipeline': 6.3.0
       '@jsdevtools/rehype-toc': 3.0.2
       '@sindresorhus/slugify': 2.2.1
       hast-util-to-string: 2.0.0
@@ -521,6 +521,7 @@ packages:
       rehype-slug: 5.1.0
       rehype-stringify: 9.0.4
       remark-directive: 2.0.1
+      remark-embed-images: 4.0.0
       remark-frontmatter: 4.0.1
       remark-gfm: 3.0.1
       remark-parse: 10.0.2
@@ -535,28 +536,28 @@ packages:
       - supports-color
     dev: true
 
-  /@contentedjs/contented-pipeline@6.2.0:
-    resolution: {integrity: sha512-F9ewEF2Q5herN3xLE3bNLsqa/dGmssEGQ6kjknSGUQE0Yx9fOSPKSfPal8eEaZIv3ctlqjASP84Od38EXpGb+w==}
+  /@contentedjs/contented-pipeline@6.3.0:
+    resolution: {integrity: sha512-3kxgjhjWUh8ru7fp9PQfFdwKI3wNk+z6AQqzHXoyXEjlNLDlbf1o27gH/VfwWDIL0WsFuiC84sKtEMHAwx1wcQ==}
     dependencies:
       '@sindresorhus/slugify': 2.2.1
     dev: true
 
-  /@contentedjs/contented-processor@6.2.0:
-    resolution: {integrity: sha512-txTPANLJWmpzPRN89Gyz7pQpmAwMoLwcHuYmU06PfSn4w9AWSKNphv8TJpXFenHW12Uyijr9lho3SFAsUa21fw==}
+  /@contentedjs/contented-processor@6.3.0:
+    resolution: {integrity: sha512-DtCZY6SpJIireDh1QlwaXDfK3nt0vPz3Dm7MVpOQoUISdRaw9VjriFI2MS0xW1Oy28kpxXsH6CsHK9vNpv1cMA==}
     dependencies:
       '@babel/generator': 7.23.0
-      '@contentedjs/contented-pipeline': 6.2.0
-      '@contentedjs/contented-pipeline-md': 6.2.0
+      '@contentedjs/contented-pipeline': 6.3.0
+      '@contentedjs/contented-pipeline-md': 6.3.0
       minimatch: 5.1.6
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@contentedjs/contented@6.2.0(typanion@3.9.0):
-    resolution: {integrity: sha512-JSV2FDF55z6CE2VMe+UtoCzZUFwd7+gcGpJm6llpB0IqlVb44EvYUZ1iX1sooJeWFm+icBeBBIGkU31v6VA5tg==}
+  /@contentedjs/contented@6.3.0(typanion@3.9.0):
+    resolution: {integrity: sha512-A9Yf7mTVJYtU4JumcnyRUVIPRgGeuWYjzcSXfpBnEbzbFPSW2b/RrOVnd+4a6pcrPhsB/F+EwVsr96JFOB+6ig==}
     hasBin: true
     dependencies:
-      '@contentedjs/contented-processor': 6.2.0
+      '@contentedjs/contented-processor': 6.3.0
       '@parcel/watcher': 2.3.0
       clipanion: 3.2.1(typanion@3.9.0)
       debounce: 1.2.1
@@ -1188,6 +1189,12 @@ packages:
 
   /@types/mdast@3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
+    dependencies:
+      '@types/unist': 3.0.0
+    dev: true
+
+  /@types/mdast@4.0.1:
+    resolution: {integrity: sha512-IlKct1rUTJ1T81d8OHzyop15kGv9A/ff7Gz7IJgrk6jDb4Udw77pCJ+vq8oxZf4Ghpm+616+i1s/LNg/Vh7d+g==}
     dependencies:
       '@types/unist': 3.0.0
     dev: true
@@ -3368,6 +3375,13 @@ packages:
       has-tostringtag: 1.0.0
     dev: false
 
+  /is-relative-url@4.0.0:
+    resolution: {integrity: sha512-PkzoL1qKAYXNFct5IKdKRH/iBQou/oCC85QhXj6WKtUQBliZ4Yfd3Zk27RHu9KQG8r6zgvAA2AQKC9p+rqTszg==}
+    engines: {node: '>=14.16'}
+    dependencies:
+      is-absolute-url: 4.0.1
+    dev: true
+
   /is-shared-array-buffer@1.0.2:
     resolution: {integrity: sha512-sqN2UDu1/0y6uvXyStCOzyhAjCSlHceFoMKJW8W9EU9cvic/QdsZ0kEU93HEy3IUEFZIiH/3w+AH/UQbPHNdhA==}
     dependencies:
@@ -4638,6 +4652,12 @@ packages:
       mime-db: 1.52.0
     dev: true
 
+  /mime@3.0.0:
+    resolution: {integrity: sha512-jSCU7/VB1loIWBZe14aEYHU/+1UMEHoaO7qxCOVJOw9GgH72VAWppxNcjU+x9a2k3GSIBXNKxXQFqRvvZ7vr3A==}
+    engines: {node: '>=10.0.0'}
+    hasBin: true
+    dev: true
+
   /mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
     engines: {node: '>=6'}
@@ -5254,6 +5274,16 @@ packages:
       mdast-util-directive: 2.2.1
       micromark-extension-directive: 2.1.1
       unified: 10.1.2
+    dev: true
+
+  /remark-embed-images@4.0.0:
+    resolution: {integrity: sha512-c8qQMdhNTSO9TMMfbvf5CWI+HhIX5UZPTBVNaNSpxaEuRt0KCLFk68s5CQ7szbSERLnpos+c9K6xZoILWRh+eQ==}
+    dependencies:
+      '@types/mdast': 4.0.1
+      is-relative-url: 4.0.0
+      mime: 3.0.0
+      unist-util-visit: 5.0.0
+      vfile: 6.0.1
     dev: true
 
   /remark-frontmatter@4.0.1:
@@ -6079,6 +6109,12 @@ packages:
     resolution: {integrity: sha512-F5CZ68eYzuSvJjGhCLPL3cYx45IxkqXSetCcRgUXtbcm50X2L9oOWQlfUfDdAf+6Pd27YDblBfdtmsThXmwpbQ==}
     dev: true
 
+  /unist-util-is@6.0.0:
+    resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
+    dependencies:
+      '@types/unist': 3.0.0
+    dev: true
+
   /unist-util-map@4.0.0:
     resolution: {integrity: sha512-HJs1tpkSmRJUzj6fskQrS5oYhBYlmtcvy4SepdDEEsL04FjBrgF0Mgggvxc1/qGBGgW7hRh9+UBK1aqTEnBpIA==}
     dependencies:
@@ -6097,11 +6133,24 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
+  /unist-util-stringify-position@4.0.0:
+    resolution: {integrity: sha512-0ASV06AAoKCDkS2+xw5RXJywruurpbC4JZSm7nr7MOt1ojAzvyyaO+UxZf18j8FCF6kmzCZKcAgN/yu2gm2XgQ==}
+    dependencies:
+      '@types/unist': 3.0.0
+    dev: true
+
   /unist-util-visit-parents@5.1.1:
     resolution: {integrity: sha512-gks4baapT/kNRaWxuGkl5BIhoanZo7sC/cUT/JToSRNL1dYoXRFl75d++NkjYk4TAu2uv2Px+l8guMajogeuiw==}
     dependencies:
       '@types/unist': 2.0.6
       unist-util-is: 5.1.1
+    dev: true
+
+  /unist-util-visit-parents@6.0.1:
+    resolution: {integrity: sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
     dev: true
 
   /unist-util-visit@4.1.2:
@@ -6110,6 +6159,14 @@ packages:
       '@types/unist': 2.0.6
       unist-util-is: 5.1.1
       unist-util-visit-parents: 5.1.1
+    dev: true
+
+  /unist-util-visit@5.0.0:
+    resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
+      unist-util-visit-parents: 6.0.1
     dev: true
 
   /untildify@4.0.0:
@@ -6179,6 +6236,13 @@ packages:
       unist-util-stringify-position: 3.0.2
     dev: true
 
+  /vfile-message@4.0.2:
+    resolution: {integrity: sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-stringify-position: 4.0.0
+    dev: true
+
   /vfile@5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
     dependencies:
@@ -6186,6 +6250,14 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.2
       vfile-message: 3.1.2
+    dev: true
+
+  /vfile@6.0.1:
+    resolution: {integrity: sha512-1bYqc7pt6NIADBJ98UiG0Bn/CHIVOoZ/IyEkqIruLg0mE1BKzkOXY2D6CSqQIcKqgadppE5lrxgWXJmXd7zZJw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-stringify-position: 4.0.0
+      vfile-message: 4.0.2
     dev: true
 
   /vscode-oniguruma@1.7.0:
