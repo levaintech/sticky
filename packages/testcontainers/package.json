@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@stickyjs/turbo-jest": "workspace:*",
-    "@types/node-fetch": "2.6.5",
+    "@types/node-fetch": "2.6.9",
     "node-fetch": "2.7.0"
   }
 }
