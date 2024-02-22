@@ -12,7 +12,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.2",
-    "prettier-plugin-packagejson": "^2.4.8",
+    "prettier-plugin-packagejson": "^2.4.12",
     "prettier-plugin-tailwindcss": "^0.5.11"
   }
 }
