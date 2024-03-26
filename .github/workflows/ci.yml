@@ -112,7 +112,7 @@ jobs:
 
       - run: pnpm turbo run test --concurrency=1 --filter=${{ matrix.package }} -- --coverage --forceExit
 
-      - uses: codecov/codecov-action@ab904c41d6ece82784817410c45d8b8c02684457 # v3.1.6
+      - uses: codecov/codecov-action@c16abc29c95fcf9174b58eb7e1abf4c866893bc8 # v4.1.1
 
   test_completed:
     name: Test [completed]
